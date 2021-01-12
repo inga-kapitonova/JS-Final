@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>To-Do (Inga)</title>
+<title>To-Do Ver 2 (Inga)</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
 <div id="wrapper">
-    <div class="input-block">
-        <h1>To-Do List</h1>
-        <form action="" class="input-form">
-            <textarea id="myInput" placeholder="Insert your text..."></textarea>
-            <button class="addBtn">Remind me</button>
-        </form>
+    <div class="todo-form">
+        <textarea class="todo-form--text" placeholder="Insert your text..."></textarea>
+        <button class="todo-form--btn">Remind me</button>
+        <button class="todo-form--close"><i class="fas fa-times"></i></button>
     </div>
-    <div class="list-block">
-        <span>one</span>
+    <div class="header">
+        <h1 class="header-title">JS Final "To-Do" List</h1>
+    </div>
+    <div class="container">
+        <a href="#" class="add-new">+ New task</a>
+        <ul class="listContainer">
+            <li class="listItem template">
+                <span contenteditable="true" class="listContent">Default info</span>
+                <a class="mark-done" href="#">
+                    <i class="fas fa-check"></i>
+                </a>
+                <a class="mark-delete" href="#">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
+            </li>
+        </ul>
+        <button class="clear-all">Clear all entries</button>
+    </div>
+    <div class="copyright">
+        by Inga Kapitonova 2021
     </div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
