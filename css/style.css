@@ -1,26 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  min-height: 100%;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #373737;
   background-image: url("../img/bg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 pre {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 textarea:focus {
-  outline: none; }
+  outline: none;
+}
 
 #wrapper {
   max-width: 800px;
-  margin: 10% auto;
-  position: relative; }
+  margin: 6% auto;
+  position: relative;
+}
 
 .header {
   background: #bc82de;
@@ -28,90 +35,104 @@ textarea:focus {
   box-sizing: border-box;
   padding: 0 30px;
   height: 75px;
-  line-height: 75px; }
-  .header .header-title {
-    margin: 0;
-    font-size: 2em;
-    color: #fff;
-    font-weight: normal; }
+  line-height: 75px;
+}
+.header .header-title {
+  margin: 0;
+  font-size: 2em;
+  color: #fff;
+  font-weight: normal;
+}
 
 .container {
   background: #fff;
   border-radius: 0 0 10px 10px;
   box-sizing: border-box;
   padding: 50px;
-  position: relative; }
-  .container .add-new {
-    display: inline-block;
-    color: #fff;
-    background: #8b4bb0;
-    padding: 10px 20px;
-    border-radius: 10px;
-    position: absolute;
-    top: -20px;
-    right: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    /*&:hover {
+  position: relative;
+}
+.container .add-new {
+  display: inline-block;
+  color: #fff;
+  background: #8b4bb0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  /*&:hover {
       background-color: $button-color_hover;
-    }*/ }
-  .container .listContainer {
-    padding: 0;
-    margin: 0; }
-    .container .listContainer .listItem {
-      list-style-type: none;
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 5px;
-      margin-top: 15px; }
-      .container .listContainer .listItem:first-child {
-        margin-top: 0; }
-      .container .listContainer .listItem .listContent {
-        display: block;
-        margin: 0;
-        background: #efefff;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: 15px;
-        width: 630px; }
-        .container .listContainer .listItem .listContent pre {
-          white-space: pre-wrap;
-          white-space: -moz-pre-wrap;
-          white-space: -pre-wrap;
-          white-space: -o-pre-wrap;
-          word-wrap: break-word;
-          font-family: "Open Sans", sans-serif;
-          font-size: 16px;
-          color: #373737; }
-      .container .listContainer .listItem .mark-done,
-      .container .listContainer .listItem .mark-delete {
-        display: inline-block;
-        text-decoration: none;
-        min-width: 28px;
-        width: 28px;
-        height: 28px;
-        line-height: 30px;
-        border: 1px solid #bc82de;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 0.7em;
-        color: #bc82de; }
-      .container .listContainer .listItem .mark-done:hover {
-        background: #3acc6a;
-        color: #fff;
-        border-color: #3acc6a; }
-      .container .listContainer .listItem .mark-delete:hover {
-        background: #cc3a3a;
-        color: #fff;
-        border-color: #cc3a3a; }
-    .container .listContainer .done .listContent {
-      text-decoration: line-through;
-      color: #717171;
-      background: #f5f5fd; }
-    .container .listContainer .done .mark-done {
-      background: #3acc6a;
-      color: #fff;
-      border-color: #3acc6a; }
+    }*/
+}
+.container .listContainer {
+  padding: 0;
+  margin: 0;
+}
+.container .listContainer .listItem {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  margin-top: 15px;
+}
+.container .listContainer .listItem:first-child {
+  margin-top: 0;
+}
+.container .listContainer .listItem .listContent {
+  display: block;
+  margin: 0;
+  background: #d9d9ec;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 630px;
+}
+.container .listContainer .listItem .listContent pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #373737;
+}
+.container .listContainer .listItem .mark-done,
+.container .listContainer .listItem .mark-delete {
+  display: inline-block;
+  text-decoration: none;
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  line-height: 30px;
+  border: 1px solid #bc82de;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.7em;
+  color: #bc82de;
+}
+.container .listContainer .listItem .mark-done:hover {
+  background: #3acc6a;
+  color: #fff;
+  border-color: #3acc6a;
+}
+.container .listContainer .listItem .mark-delete:hover {
+  background: #cc3a3a;
+  color: #fff;
+  border-color: #cc3a3a;
+}
+.container .listContainer .done .listContent {
+  text-decoration: line-through;
+  color: #717171;
+  background: #f5f5fd;
+}
+.container .listContainer .done .mark-done {
+  background: #3acc6a;
+  color: #fff;
+  border-color: #3acc6a;
+}
 
 .todo-form {
   background: #8b4bb0;
@@ -123,41 +144,51 @@ textarea:focus {
   top: 89px;
   right: 20px;
   z-index: 2;
-  display: none; }
-  .todo-form.active {
-    display: block; }
-  .todo-form--text {
-    width: 100%;
-    height: 100px;
-    resize: none;
-    background: #fff;
-    border-radius: 10px;
-    margin: 10px 0;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.8em; }
-  .todo-form--btn {
-    cursor: pointer;
-    background: #bc82de;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 15px; }
-    .todo-form--btn:focus {
-      outline: none; }
-  .todo-form--close {
-    cursor: pointer;
-    border: none;
-    color: #fff;
-    background-color: transparent;
-    font-size: 1.2em; }
+  display: none;
+}
+.todo-form.active {
+  display: block;
+}
+.todo-form--text {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  background: #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+}
+.todo-form--btn {
+  cursor: pointer;
+  background: #bc82de;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.todo-form--btn:focus {
+  outline: none;
+}
+.todo-form--close {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
 
 .copyright {
   text-align: right;
   color: #fff;
   font-size: 0.6em;
-  margin: 5px 10px 0 0; }
+  margin: 5px 10px 0 0;
+}
 
 .clear-all {
   margin-top: 20px;
@@ -166,11 +197,28 @@ textarea:focus {
   color: #fff;
   border: none;
   border-radius: 10px;
-  padding: 10px 15px; }
-  .clear-all:focus {
-    outline: none; }
+  padding: 10px 15px;
+}
+.clear-all:focus {
+  outline: none;
+}
 
 .listItem.template {
-  display: none !important; }
+  display: none !important;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*mobile*/
+
+@media screen and (max-width: 554px) {
+  .todo-form {
+    width: 400px;
+  }
+  .header-title {
+    font-size: 1.2em !important;
+  }
+}
+@media screen and (max-width: 454px) {
+  .todo-form {
+    width: 260px;
+  }
+}
