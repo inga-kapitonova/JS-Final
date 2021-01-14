@@ -7,26 +7,18 @@
 
 <div id="wrapper">
     <div class="todo-form">
-        <textarea class="todo-form--text" placeholder="Insert your text..."></textarea>
-        <button class="todo-form--btn">Remind me</button>
-        <button class="todo-form--close"><i class="fas fa-times"></i></button>
+        <form>
+            <textarea class="todo-form--text" placeholder="Insert your text..."></textarea>
+            <button class="todo-form--btn">Remind me</button>
+        </form>
+        <button type="submit" class="todo-form--close"><i class="fas fa-times"></i></button>
     </div>
     <div class="header">
         <h1 class="header-title">JS Final "To-Do" List</h1>
     </div>
     <div class="container">
         <a href="#" class="add-new">+ New task</a>
-        <ul class="listContainer">
-            <li class="listItem template">
-                <span contenteditable="true" class="listContent"><pre>Default info</pre></span>
-                <a class="mark-done" href="#">
-                    <i class="fas fa-check"></i>
-                </a>
-                <a class="mark-delete" href="#">
-                    <i class="fas fa-trash-alt"></i>
-                </a>
-            </li>
-        </ul>
+        <ul class="listContainer"></ul>
         <button class="clear-all">Clear all entries</button>
     </div>
     <div class="copyright">
@@ -35,4 +27,5 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/script.js"></script>
